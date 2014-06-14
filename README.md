@@ -32,7 +32,12 @@ This repository describes __slimver__ which is a simplified, and strict variant 
 Only simple version range expressions are permitted, and while this is still being thought about my thinking is this:
 
 - `^` expressions will be supported with all their current weirdness:
-  - To be documented
+
+	| version | min   | max           |
+  |---------|-------|---------------|
+  | ^1.2.3  | 1.2.3 | 1.65535.65535 |
+  | ^0.1.2  | 0.1.2 | 0.1.65535     |
+  | ^0.0.1  | 0.0.1 | 0.0.1         |
 
 - `.x` expressions will also be supported.
 
