@@ -1,0 +1,26 @@
+{
+  "name": "slimver",
+  "version": "0.0.0",
+  "description": "Lightweight and strict numeric versioning (major.minor.patch) only",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DamonOehlman/slimver-spec.git"
+  },
+  "keywords": [
+    "slimver",
+    "spec"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamonOehlman/slimver-spec/issues"
+  },
+  "homepage": "https://github.com/DamonOehlman/slimver-spec",
+  "devDependencies": {
+    "blockdown": "^0.4.2"
+  }
+}
