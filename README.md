@@ -8,7 +8,24 @@ This repository describes __slimver__ which is a simplified, and strict variant 
 
 - A slimver version string is expressed in the form, `MAJOR.MINOR.PATCH` as per the semver spec. In contrast with semver though, slimver has no capacity to express prerelease or build metadata as part of the version string.  It is a strictly three unsigned integer values joined using a single dot character (`.`).
 
-- Each of the version parts is constrained within the range of 0..65535, whereby `65535.65535.65535` is the most significant version of a thing that can be tagger for release using slimver.
+  __OK__
+
+  - `1.0.0`
+
+  __NOT OK__
+
+  - `1.0.0-beta1`
+
+- Each of the version parts is constrained within the range of `0..65535`, whereby `65535.65535.65535` is the most significant version of a thing that can be tagger for release using slimver.
+
+  __OK__
+
+  - `1.0.0`
+  - `1.5.65535`
+
+  __NOT OK__
+
+  - `5.123232.0`
 
 ### Version Expressions
 
