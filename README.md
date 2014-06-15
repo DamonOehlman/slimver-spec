@@ -27,7 +27,7 @@ This repository describes __slimver__ which is a simplified, and strict variant 
 
   - `5.123232.0`
 
-### Version Expressions
+### Ranges
 
 Only simple version range expressions are permitted, and while this is still being thought about my thinking is this:
 
@@ -39,12 +39,14 @@ Only simple version range expressions are permitted, and while this is still bei
   | ^0.1.2  | 0.1.2 | 0.1.65535     |
   | ^0.0.1  | 0.0.1 | 0.0.1         |
 
+- `~` expressions are supported, but are __EXACTLY THE SAME__ as `^` expressions
+
 - `.x` expressions will also be supported.
 
 ## Benefits
 
 - Comparisons are easy
-- By sticking to the version string rules a version can be encoded into a single unsigned integer value for easy comparison.
+- By sticking to the version string rules a version can be encoded into a single unsigned integer value (48-bit) for easy comparison.
 
 ## Feedback
 
