@@ -1,9 +1,39 @@
 body {
+  font-family: Arvo, serif;
+  background: #eee;
   margin: 20px;
 }
 
 .container {
-  background: #f8f8f8;
+  background: white;
+  border: 4px solid #d8d8d8;
   padding: 40px;
   border-radius: 20px;
+}
+
+pre, code, table {
+  font-family: 'Source Code Pro', monospace;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-spacing: 0px;
+}
+
+table td, th {
+  padding: 5px;
+  margin: 0;
+  min-width: 100px;
+  text-align: left;
+}
+
+table th {
+  border-bottom: 1px solid #ccc;
+}
+
+table tr:nth-child(2n) {
+  background: #e8e8e8;
+}
+
+table tr {
 }

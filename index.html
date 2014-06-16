@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="app"></div>
         <div role="content"><h1 id="slimver">slimver</h1>
 <p>This repository describes <strong>slimver</strong> which is a simplified, opinionated, and strict variant of the <a href="http://semver.org/">semver</a> spec.  If it doesn&#39;t fit your needs, then that is likely by design and you should continue with using semver.</p>
 <p>Feel free to open an issue if you would like to discuss aspects of the design though.</p>
+<div class="app"></div>
+
 <h2 id="rules">Rules</h2>
 <h3 id="version-strings">Version Strings</h3>
 <ul>
@@ -42,17 +43,64 @@
 <p>Only simple version range expressions are permitted, and while this is still being thought about my thinking is this:</p>
 <ul>
 <li><p><code>^</code> expressions will be supported with all their current weirdness:</p>
-<p>  | version | min   | max           |
-|---------|-------|---------------|
-| ^1.2.3  | 1.2.3 | 1.65535.65535 |
-| ^0.1.2  | 0.1.2 | 0.1.65535     |
-| ^0.0.1  | 0.0.1 | 0.0.1         |</p>
 </li>
 <li><p><code>~</code> expressions are supported, but are <strong>EXACTLY THE SAME</strong> as <code>^</code> expressions</p>
 </li>
 <li><p><code>.x</code> expressions will also be supported.</p>
 </li>
 </ul>
+<h4 id="range-examples">Range Examples</h4>
+<table>
+<thead>
+<tr>
+<th>version</th>
+<th>min</th>
+<th>max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^1.2.3</td>
+<td>1.2.3</td>
+<td>1.65535.65535</td>
+</tr>
+<tr>
+<td>^0.1.2</td>
+<td>0.1.2</td>
+<td>0.1.65535</td>
+</tr>
+<tr>
+<td>^0.0.1</td>
+<td>0.0.1</td>
+<td>0.0.1</td>
+</tr>
+<tr>
+<td>~1.2.3</td>
+<td>1.2.3</td>
+<td>1.65535.65535</td>
+</tr>
+<tr>
+<td>~0.1.2</td>
+<td>0.1.2</td>
+<td>0.1.65535</td>
+</tr>
+<tr>
+<td>~0.0.1</td>
+<td>0.0.1</td>
+<td>0.0.1</td>
+</tr>
+<tr>
+<td>1.x.x</td>
+<td>1.0.0</td>
+<td>1.65535.65535</td>
+</tr>
+<tr>
+<td>1.1.x</td>
+<td>1.1.0</td>
+<td>1.1.65535</td>
+</tr>
+</tbody>
+</table>
 <h2 id="benefits">Benefits</h2>
 <ul>
 <li>Comparisons are easy</li>
