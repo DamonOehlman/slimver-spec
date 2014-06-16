@@ -11,6 +11,11 @@ body {
   border-radius: 20px;
 }
 
+label {
+  display: inline-block;
+  min-width: 100px;
+}
+
 pre,
 code,
 table {
