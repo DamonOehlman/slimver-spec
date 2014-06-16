@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Source+Code+Pro);
+
 body {
   font-family: Arvo, serif;
   background: #eee;
@@ -18,7 +20,8 @@ label {
 
 pre,
 code,
-table {
+table,
+input[name="range"] {
   font-family: 'Source Code Pro', monospace;
 }
 

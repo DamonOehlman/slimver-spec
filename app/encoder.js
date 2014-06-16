@@ -27,7 +27,7 @@ function renderRange(value) {
     ]),
     h('div', [
       h('label', 'Encoded: '),
-      h('span', '' + (encoded !== null ? encoded : ''))
+      h('code', '' + (encoded !== null ? encoded : ''))
     ])
   ]);
 }
