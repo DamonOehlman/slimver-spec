@@ -23,6 +23,7 @@
   "homepage": "https://github.com/DamonOehlman/slimver-spec",
   "devDependencies": {
     "blockdown": "^0.4.2",
+    "browserify": "^4.1.10",
     "mercury": "^5.0.2",
     "slimver": "^0.1.2",
     "suitcss-preprocessor": "^0.2.0"
