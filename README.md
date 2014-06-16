@@ -1,6 +1,8 @@
 # slimver
 
-This repository describes __slimver__ which is a simplified, and strict variant of the [semver](http://semver.org/) spec.
+This repository describes __slimver__ which is a simplified, opinionated, and strict variant of the [semver](http://semver.org/) spec.  If it doesn't fit your needs, then that is likely by design and you should continue with using semver.
+
+Feel free to open an issue if you would like to discuss aspects of the design though.
 
 ## Rules
 
