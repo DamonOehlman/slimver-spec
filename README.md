@@ -4,6 +4,8 @@ This repository describes __slimver__ which is a simplified, opinionated, and st
 
 Feel free to open an issue if you would like to discuss aspects of the design though.
 
+<div class="app"></div>
+
 ## Rules
 
 ### Version Strings
@@ -35,15 +37,23 @@ Only simple version range expressions are permitted, and while this is still bei
 
 - `^` expressions will be supported with all their current weirdness:
 
-	| version | min   | max           |
-  |---------|-------|---------------|
-  | ^1.2.3  | 1.2.3 | 1.65535.65535 |
-  | ^0.1.2  | 0.1.2 | 0.1.65535     |
-  | ^0.0.1  | 0.0.1 | 0.0.1         |
-
 - `~` expressions are supported, but are __EXACTLY THE SAME__ as `^` expressions
 
 - `.x` expressions will also be supported.
+
+#### Range Examples
+
+| version | min   | max           |
+|---------|-------|---------------|
+| ^1.2.3  | 1.2.3 | 1.65535.65535 |
+| ^0.1.2  | 0.1.2 | 0.1.65535     |
+| ^0.0.1  | 0.0.1 | 0.0.1         |
+| ~1.2.3  | 1.2.3 | 1.65535.65535 |
+| ~0.1.2  | 0.1.2 | 0.1.65535     |
+| ~0.0.1  | 0.0.1 | 0.0.1         |
+| 1.x.x   | 1.0.0 | 1.65535.65535 |
+| 1.1.x   | 1.1.0 | 1.1.65535     |
+
 
 ## Benefits
 
