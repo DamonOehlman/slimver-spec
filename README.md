@@ -5,6 +5,7 @@ This repository describes __slimver__ which is a simplified, opinionated, and st
 Feel free to open an issue if you would like to discuss aspects of the design though.
 
 <div class="app encoder"></div>
+<div class="app rangetester"></div>
 
 ## Rules
 
