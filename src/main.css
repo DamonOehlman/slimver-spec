@@ -18,7 +18,7 @@ label {
   min-width: 100px;
 }
 
-pre, code, table, input[name="range"] {
+pre, code, table, input[name="range"], input[name="version"] {
   font-family: 'Source Code Pro', monospace;
 }
 

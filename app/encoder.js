@@ -8,7 +8,7 @@ var range = mercury.value('1.0.0');
 var rangeChange = mercury.input();
 
 rangeChange(function(data) {
-  range.set(data.range);
+  range.set(data.version);
 });
 
 
@@ -22,7 +22,7 @@ function renderRange(value) {
       h('input', {
         'ev-event': mercury.changeEvent(rangeChange),
         value: value,
-        name: 'range'
+        name: 'version'
       })
     ]),
     h('div', [

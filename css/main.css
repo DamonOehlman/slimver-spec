@@ -21,7 +21,8 @@ label {
 pre,
 code,
 table,
-input[name="range"] {
+input[name="range"],
+input[name="version"] {
   font-family: 'Source Code Pro', monospace;
 }
 
