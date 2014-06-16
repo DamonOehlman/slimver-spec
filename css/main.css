@@ -1,0 +1,9 @@
+body {
+  margin: 20px;
+}
+
+.container {
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 20px;
+}
