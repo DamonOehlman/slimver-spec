@@ -58,7 +58,12 @@ Only simple version range expressions are permitted, and while this is still bei
 
 ## Benefits
 
-By sticking to the version string rules a version can be encoded into a single numeric value for easy comparison.
+- By sticking to these strict rules a version can be encoded into a single numeric value for easy comparison.
+- Simplified range expressions mean requirements are visually grokkable.
+
+## Implementations
+
+- JS: [slimver](https://github.com/DamonOehlman/slimver)
 
 ## Feedback
 
