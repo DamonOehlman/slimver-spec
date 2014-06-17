@@ -17,6 +17,7 @@
         <div role="content"><h1 id="slimver">slimver</h1>
 <p>This repository describes <strong>slimver</strong> which is a simplified, opinionated, and strict variant of the <a href="http://semver.org/">semver</a> spec.  If it doesn&#39;t fit your needs, then that is likely by design and you should continue with using semver.</p>
 <p>Feel free to <a href="https://github.com/DamonOehlman/slimver-spec/issues">open an issue</a> if you would like to discuss aspects of the design though.</p>
+<p><a href="https://github.com/dominictarr/stability#unstable"><img src="https://img.shields.io/badge/stability-unstable-yellowgreen.svg" alt="unstable" /></a></p>
 <div class="app encoder"></div>
 <div class="app rangetester"></div>
 
@@ -46,17 +47,16 @@
 </li>
 </ul>
 <h3 id="ranges">Ranges</h3>
-<p>Only simple version range expressions are permitted, and while this is still being thought about my thinking is this:</p>
+<p>Only simple version range expressions are permitted:</p>
 <ul>
-<li><p><code>^</code> expressions will be supported with all their current weirdness:</p>
+<li><p><code>^</code> expressions mean - any version matching the current major version, starting at the currently specified version.</p>
 </li>
-<li><p><code>~</code> expressions are supported, but are <strong>EXACTLY THE SAME</strong> as <code>^</code> expressions</p>
+<li><p><code>~</code> expressions are supported, but are <strong>EXACTLY THE SAME</strong> as <code>^</code> expressions.</p>
 </li>
-<li><p><code>n.x.x</code> expressions also supported.</p>
+<li><p>In the case that you want to lock to something other than a major version, you should use an <code>n.n.x</code> range expression or simply &quot;pin&quot; the version to a specific version with <code>n.n.n</code>.</p>
 </li>
 </ul>
-<p><strong>If you feel strongly about ranges, then you should participate in the following issue thread:</strong></p>
-<p><a href="https://github.com/DamonOehlman/slimver-spec/issues/2">Kill the special pre-1.0.0 meaning for ^ &amp; ~</a></p>
+<p><strong>NOTE:</strong> The special pre <code>1.0.0</code> version range matching expressions have been replaced with simpler rules (see <a href="https://github.com/DamonOehlman/slimver-spec/issues/2">here</a> and <a href="https://github.com/dominictarr/semver-ftw/issues/2">here</a> for more info behind why).</p>
 <h4 id="range-examples">Range Examples</h4>
 <table>
 <thead>
@@ -75,12 +75,12 @@
 <tr>
 <td>^0.1.2</td>
 <td>0.1.2</td>
-<td>0.1.65535</td>
+<td>0.65535.65535</td>
 </tr>
 <tr>
 <td>^0.0.1</td>
 <td>0.0.1</td>
-<td>0.0.1</td>
+<td>0.65535.65535</td>
 </tr>
 <tr>
 <td>~1.2.3</td>
@@ -90,12 +90,12 @@
 <tr>
 <td>~0.1.2</td>
 <td>0.1.2</td>
-<td>0.1.65535</td>
+<td>0.65535.65535</td>
 </tr>
 <tr>
 <td>~0.0.1</td>
 <td>0.0.1</td>
-<td>0.0.1</td>
+<td>0.65535.65535</td>
 </tr>
 <tr>
 <td>1.x.x</td>
