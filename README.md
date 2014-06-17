@@ -63,3 +63,7 @@ By sticking to the version string rules a version can be encoded into a single n
 ## Feedback
 
 Drop an issue in the repo, or add your opinion to any of the existing issues.
+
+## License
+
+[Creative Commons - CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
