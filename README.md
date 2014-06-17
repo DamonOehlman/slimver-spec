@@ -42,6 +42,10 @@ Only simple version range expressions are permitted, and while this is still bei
 
 - `n.x.x` expressions also supported.
 
+__If you feel strongly about ranges, then you should participate in the following issue thread:__
+
+[Kill the special pre-1.0.0 meaning for ^ & ~](https://github.com/DamonOehlman/slimver-spec/issues/2)
+
 #### Range Examples
 
 | version | min   | max           |
