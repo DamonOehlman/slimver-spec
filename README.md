@@ -11,7 +11,7 @@ Feel free to [open an issue](https://github.com/DamonOehlman/slimver-spec/issues
 
 ### Version Strings
 
-- A slimver version string is expressed in the form, `MAJOR.MINOR.PATCH` as per the semver spec. In contrast with semver though, slimver has no capacity to express prerelease or build metadata as part of the version string.  It is a strictly three unsigned integer values joined using a single dot character (`.`).
+- A slimver version string is expressed in the form, `MAJOR.MINOR.PATCH` as per the semver spec. In contrast with semver though, slimver has no capacity to express prerelease or build metadata as part of the version string.  It is a strictly three positive integer values (between 0 and 65535) joined using a single dot character (`.`).
 
   __OK__
 
@@ -21,7 +21,7 @@ Feel free to [open an issue](https://github.com/DamonOehlman/slimver-spec/issues
 
   - `1.0.0-beta1`
 
-- Each of the version parts is constrained within the range of `0..65535`, whereby `65535.65535.65535` is the most significant version of a thing that can be tagged for release using slimver.
+- As each of the version parts is constrained within the range of `0..65535`, `65535.65535.65535` is the largest version of a thing that can be tagged for release using slimver.
 
   __OK__
 

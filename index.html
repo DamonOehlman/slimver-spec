@@ -23,7 +23,7 @@
 <h2 id="rules">Rules</h2>
 <h3 id="version-strings">Version Strings</h3>
 <ul>
-<li><p>A slimver version string is expressed in the form, <code>MAJOR.MINOR.PATCH</code> as per the semver spec. In contrast with semver though, slimver has no capacity to express prerelease or build metadata as part of the version string.  It is a strictly three unsigned integer values joined using a single dot character (<code>.</code>).</p>
+<li><p>A slimver version string is expressed in the form, <code>MAJOR.MINOR.PATCH</code> as per the semver spec. In contrast with semver though, slimver has no capacity to express prerelease or build metadata as part of the version string.  It is a strictly three positive integer values (between 0 and 65535) joined using a single dot character (<code>.</code>).</p>
 <p><strong>OK</strong></p>
 <ul>
 <li><code>1.0.0</code></li>
@@ -33,7 +33,7 @@
 <li><code>1.0.0-beta1</code></li>
 </ul>
 </li>
-<li><p>Each of the version parts is constrained within the range of <code>0..65535</code>, whereby <code>65535.65535.65535</code> is the most significant version of a thing that can be tagged for release using slimver.</p>
+<li><p>As each of the version parts is constrained within the range of <code>0..65535</code>, <code>65535.65535.65535</code> is the largest version of a thing that can be tagged for release using slimver.</p>
 <p><strong>OK</strong></p>
 <ul>
 <li><code>1.0.0</code></li>
