@@ -44,7 +44,7 @@ Only simple version range expressions are permitted:
 
 - In the case that you want to lock to something other than a major version, you should use an `n.n.x` range expression or simply "pin" the version to a specific version with `n.n.n`.
 
-__NOTE:__ The special pre `1.0.0` version range matching expressions have been replaced with simpler rules (see [here](https://github.com/DamonOehlman/slimver-spec/issues/2) and [here](https://github.com/dominictarr/semver-ftw/issues/2) for more info behind why).
+__NOTE:__ The [special pre `1.0.0` version range matching expressions from node-semver](https://github.com/isaacs/node-semver#ranges) have been replaced with simpler rules (see [here](https://github.com/DamonOehlman/slimver-spec/issues/2) and [here](https://github.com/dominictarr/semver-ftw/issues/2) for more info behind why).
 
 #### Range Examples
 
