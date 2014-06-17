@@ -1,6 +1,6 @@
 BIN = ./node_modules/.bin
 
-all: index.html css/*.css bundle.js
+all: clean index.html css/*.css bundle.js
 
 index.html:
 	$(BIN)/blockdown src/template.html < README.md > index.html
@@ -18,5 +18,5 @@ clean:
 	rm -rf css
 	rm -rf bundle.js
 
-dev: clean all
+dev: all
 	beefy index.js:bundle.js
