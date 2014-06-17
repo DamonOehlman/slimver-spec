@@ -34,28 +34,26 @@ Feel free to [open an issue](https://github.com/DamonOehlman/slimver-spec/issues
 
 ### Ranges
 
-Only simple version range expressions are permitted, and while this is still being thought about my thinking is this:
+Only simple version range expressions are permitted:
 
-- `^` expressions will be supported with all their current weirdness:
+- `^` expressions mean - any version matching the current major version, starting at the currently specified version.
 
-- `~` expressions are supported, but are __EXACTLY THE SAME__ as `^` expressions
+- `~` expressions are supported, but are __EXACTLY THE SAME__ as `^` expressions.
 
-- `n.x.x` expressions also supported.
+- In the case that you want to lock to something other than a major version, you should use an `n.n.x` range expression or simply "pin" the version to a specific version with `n.n.n`.
 
-__If you feel strongly about ranges, then you should participate in the following issue thread:__
-
-[Kill the special pre-1.0.0 meaning for ^ & ~](https://github.com/DamonOehlman/slimver-spec/issues/2)
+__NOTE:__ The special pre `1.0.0` version range matching expressions have been replaced with simpler rules (see [here](https://github.com/DamonOehlman/slimver-spec/issues/2) and [here](https://github.com/dominictarr/semver-ftw/issues/2) for more info behind why).
 
 #### Range Examples
 
 | version | min   | max           |
 |---------|-------|---------------|
 | ^1.2.3  | 1.2.3 | 1.65535.65535 |
-| ^0.1.2  | 0.1.2 | 0.1.65535     |
-| ^0.0.1  | 0.0.1 | 0.0.1         |
+| ^0.1.2  | 0.1.2 | 0.65535.65535 |
+| ^0.0.1  | 0.0.1 | 0.65535.65535 |
 | ~1.2.3  | 1.2.3 | 1.65535.65535 |
-| ~0.1.2  | 0.1.2 | 0.1.65535     |
-| ~0.0.1  | 0.0.1 | 0.0.1         |
+| ~0.1.2  | 0.1.2 | 0.65535.65535 |
+| ~0.0.1  | 0.0.1 | 0.65535.65535 |
 | 1.x.x   | 1.0.0 | 1.65535.65535 |
 | 1.1.x   | 1.1.0 | 1.1.65535     |
 
