@@ -21,7 +21,7 @@ Feel free to [open an issue](https://github.com/DamonOehlman/slimver-spec/issues
 
   - `1.0.0-beta1`
 
-- Each of the version parts is constrained within the range of `0..65535`, whereby `65535.65535.65535` is the most significant version of a thing that can be tagger for release using slimver.
+- Each of the version parts is constrained within the range of `0..65535`, whereby `65535.65535.65535` is the most significant version of a thing that can be tagged for release using slimver.
 
   __OK__
 
