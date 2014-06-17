@@ -58,8 +58,7 @@ Only simple version range expressions are permitted, and while this is still bei
 
 ## Benefits
 
-- Comparisons are easy
-- By sticking to the version string rules a version can be encoded into a single unsigned integer value (48-bit) for easy comparison.
+By sticking to the version string rules a version can be encoded into a single numeric value for easy comparison.
 
 ## Feedback
 
