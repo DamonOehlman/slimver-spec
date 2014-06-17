@@ -59,7 +59,6 @@ __NOTE:__ The special pre `1.0.0` version range matching expressions have been r
 | 1.x.x   | 1.0.0 | 1.65535.65535 |
 | 1.1.x   | 1.1.0 | 1.1.65535     |
 
-
 ## Benefits
 
 - By sticking to these strict rules a version can be encoded into a single numeric value for easy comparison.
@@ -72,6 +71,12 @@ __NOTE:__ The special pre `1.0.0` version range matching expressions have been r
 ## Feedback
 
 Drop an issue in the [source repo](https://github.com/DamonOehlman/slimver-spec), or add your opinion to any of the [existing issues](https://github.com/DamonOehlman/slimver-spec/issues).
+
+## Other Reading
+
+The following sites, issues, posts, etc are all worth a look:
+
+- <http://semver-ftw.org/>
 
 ## License
 
