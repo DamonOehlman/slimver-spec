@@ -67,7 +67,7 @@ Only simple version range expressions are permitted, and while this is still bei
 
 ## Feedback
 
-Drop an issue in the repo, or add your opinion to any of the existing issues.
+Drop an issue in the [source repo](https://github.com/DamonOehlman/slimver-spec), or add your opinion to any of the [existing issues](https://github.com/DamonOehlman/slimver-spec/issues).
 
 ## License
 
