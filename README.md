@@ -4,6 +4,8 @@ This repository describes __slimver__ which is a simplified, opinionated, and st
 
 Feel free to [open an issue](https://github.com/DamonOehlman/slimver-spec/issues) if you would like to discuss aspects of the design though.
 
+[![unstable](https://img.shields.io/badge/stability-unstable-yellowgreen.svg)](https://github.com/dominictarr/stability#unstable)
+
 <div class="app encoder"></div>
 <div class="app rangetester"></div>
 
