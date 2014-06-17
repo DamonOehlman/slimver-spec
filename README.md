@@ -40,7 +40,7 @@ Only simple version range expressions are permitted, and while this is still bei
 
 - `~` expressions are supported, but are __EXACTLY THE SAME__ as `^` expressions
 
-- `.x` expressions also be supported.
+- `n.x.x` expressions also supported.
 
 #### Range Examples
 
